@@ -7,7 +7,7 @@
 }
 
 body{
-    background: url(/img/fondo.jpg);
+    background: url(/img/fondo2.jpg);
     background-position: top center;
     height: 1080px;
 }
@@ -17,17 +17,16 @@ header{
     position: relative;
     margin: auto;
     width: 1000px;
-    height: 83px; 
+    height: 83px;
+    background: url(/img/back1.jpg);
 }
 /* ------- */
 
 #logo{
     position: absolute;
-    top: 17px;
     left: 15px;
     width: 188px;
     height: 47px;
-    background: rgba(2, 2, 73, 0.5) 
 }
 
 /* ---Nav-- */
@@ -36,9 +35,9 @@ nav{
     margin: auto;
     width: 1000px;
     height: 45px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(95, 139, 141);
+    background: url(/img/nav.jpg);
 }
-/* -------- */
 
 nav ul{
     position: absolute;
@@ -46,7 +45,6 @@ nav ul{
     left: 0px;
     width: 500px;
     height: 45px;
-    background: rgba(255,255,0,.5);
 }
 
 nav ul li{
@@ -56,9 +54,9 @@ nav ul li{
     text-align: center;
     font-size: 14px;
     color: white;
-    background: rgba(1, 70, 10, 0.5);
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(77, 109, 102);
 }
+/* -------- */
 
 /* --- Slider -- */
 #slider{
@@ -75,15 +73,14 @@ nav ul li{
     margin: auto;
     width: 1000px;
     height: 26px;
+    background: url(/img/back.jpg);
 }
-/* -------- */
 
 #botoneraSlide ul{
     position: relative;
     margin: auto;
     width: 100px;
     height: 26px;
-    background: rgba(175, 6, 6, 0.5);
 }
 
 #botoneraSlide ul li{
@@ -91,46 +88,219 @@ nav ul li{
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background:black;
+    background:#1c2a8b;
     border: 3px solid white;
     margin: 3px 2px;
 }
+/* -------- */
 
 /* --- Section -- */
-Section{
+Section#inicio{
     position: relative;
     margin: auto;
     width: 1000px;
     height: 299px;
+    background: white;
 }
 
-Section ul li{
+Section#inicio ul li{
     float: left;
     width: 333px;
     height: 299px;
     
 }
 
-Section ul li h1{
+Section#inicio ul li h1{
     margin: 25px 28px;
     font-weight: 100px;
     font-size: 23px;
 }
 
-Section ul li p{
+Section#inicio ul li p{
     margin: 23px 30px;
     font-weight: 100px;
     font-size: 15px;
 }
 
-Section ul li img{
+Section#inicio ul li img{
     margin: -1px 30px;
     width: 273px;
     height: 83px;
-    background: rgba(0, 255, 255, .5)
-
 }
-/* -------- */
+/* --fin inicio------ */
+
+/* --- Section quienes somos-- */
+Section#quienesomos{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    /* background:url(/img/quienesSomosA.jpg); */
+    background: white;
+}
+
+Section#quienesomos h1{
+    position: relative;
+    top: 15px;
+    left: 27px;
+    color: #4c4d53;
+    font-weight: 100; 
+}
+
+Section#quienesomos hr{
+    position: relative;
+    top: 20px;
+    width: 950px;
+    margin: auto;
+    border: 1px solid #4c4d53;
+}
+
+Section#quienesomos p{
+    position: relative;
+    top: 48px;
+    width: 950px;
+    margin: auto;
+    color: #4c4d53;
+    text-align: justify;
+}
+
+Section#quienesomos p img{
+    float: left;
+    width: 272px;
+    margin-right: 20px;
+    margin-bottom: 11px; 
+}
+/* ---fin quienes somos----- */
+
+/* --- Section Servicios-- */
+Section#servicios{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    /* background: url(/img/serviciosA.jpg); */
+    background: white;
+}
+
+Section#servicios #cajaServicio{
+    position: relative;
+    width: 935px;
+    top: 20px;
+    left: 31px;
+    height: 262px;
+    box-shadow: 0px 0px 30px #222;
+}
+
+Section#servicios #cajaServicio ul#lista{
+    position: relative;
+    top: 20px;
+    left: 15px;
+    width: 151px;
+    height: 220px;
+}
+
+Section#servicios #cajaServicio ul#lista li{
+    width: 151px;
+    height: 72px;
+    margin: 2px 0px;
+    cursor: pointer;
+}
+
+Section#servicios #cajaServicio ul#visor{
+    position: absolute;
+    top: 20px;
+    right: 19px;
+    width: 731px;
+    height: 222px;
+}
+Section#servicios #cajaServicio ul#visor li{ 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 732px;
+    height: 222px;
+}
+Section#servicios #cajaServicio ul#visor li h1{
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    left: 20px;
+}
+Section#servicios #cajaServicio ul#visor li p{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    width:  96.6%;
+    line-height: 50px;
+    padding-left: 23px;
+    color: white;
+}
+/* ---fin servicios----- */
+
+/* --- Section contacto-- */
+Section#contacto{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    /* background: url(/img/contactoA.jpg); */
+    background: white;
+}
+    
+Section#contacto form{
+    position: relative;
+    margin: auto;
+    top: 32px;
+    width: 912px;
+    height: 233px;
+    background: white;
+}
+
+Section#contacto form input#nombre{
+    position: absolute;
+    padding: 10px;
+    width: 272px;
+    height: 45px;
+    background: #dce9d7;
+    border: 0px;
+}
+Section#contacto form input#email{
+    position: absolute;
+    padding: 10px;
+    width: 272px;
+    height: 45px;
+    top: 81px;
+    background: #dce9d7;
+    border: 0px;
+}
+Section#contacto form input#asunto{
+    position: absolute;
+    padding: 10px;
+    width: 272px;
+    height: 45px;
+    top: 164px;
+    background: #dce9d7;
+    border: 0px;
+}
+Section#contacto form #mensaje{
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    width: 581px;
+    height: 130px;
+    background: #dce9d7;
+    border: 0px;
+}
+Section#contacto form input#enviar{
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    width: 605px;
+    height: 70px;
+    top: 164px
+}
+/* ---fin contacto----- */
 
 /* --- botonera -- */
 #bottom{
@@ -138,6 +308,7 @@ Section ul li img{
     margin: auto;
     width: 1000px;
     height: 190px;
+    background: url(/img/backbottom.jpg);
 }
 
 #bottom ul li {
@@ -167,6 +338,7 @@ Section ul li img{
     list-style: inside;
     font-size: 16px;
     color: white;
+    list-style-image: url(/img/araow.jpg);
 }
 
 #bottom ul li img{
@@ -176,7 +348,8 @@ Section ul li img{
     width: 95px;
     height: 95px;
     border: 4px solid white;
-    background: silver;
+    background: url(/img/img4.jpg);
+    background-size: cover;
 }
 
 #bottom ul li ul{
@@ -185,7 +358,6 @@ Section ul li img{
     left: 15px;
     width: 200px;
     height: 40px;
-    background: rgba(3, 162, 239, 0.2);
 }
 
 #bottom ul li ul li{
@@ -196,6 +368,32 @@ Section ul li img{
     background: white;
     margin: 5px;
 }
+
+#bottom ul li ul li:first-child{
+    background: url(/img/facebook.png);
+    background-size: cover; 
+}
+
+#bottom ul li ul li:nth-child(2){
+    background: url(/img/goolge.png);
+    background-size: cover; 
+}
+#bottom ul li ul li:nth-child(3){
+    background: url(/img/pinteres.png);
+    background-size: cover; 
+}
+#bottom ul li ul li:last-child{
+    background: url(/img/twitter.png);
+    background-size: cover; 
+}
+
+#bottom ul li ul li a{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
 /* -------- */
 
 /* --- Section -- */
@@ -208,6 +406,7 @@ footer{
     color: white;
     line-height: 62px;
     font-size: 15px;
+    background: black;
 }
 /* -------- */
 

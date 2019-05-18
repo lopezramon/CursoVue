@@ -1,22 +1,111 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Curso Vue</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='' href='css/index.css'>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script> 
-</head>
-<body>
-    <!-- <div id="vue"> -->
-        <!-- <span>{{ mensaje }}</span> -->
-        <!-- <img v-bind:src="src">  -->
-        <!-- <button v-on:click="mensaje = 'Hola Mundo'"> Cambiar Mensaje</button>
-        <button v-on:click="destruir"> Destruir Mensaje</button> -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Curso Vue</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='' href='css/style.css'>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script> 
+    </head>
+    <body>
+        <!-- Cabezera -->
+        <header>
+            
+            <div id="logo">
+                <img src="img/logotipo.png" width="100%" alt="ramon">
+            </div>
 
-    <!-- </div>
-    <script src="js/vue.js"></script> -->
-</body>
-</html>
+        </header>
+        <!-- Fin Cabezera -->
+        
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <a href="index.html" ><li>Inicio</li></a>
+                <a href="quienesSomos.html" ><li>Quienes Somos</li></a>
+                <a href="servicios.html" ><li>Servicios</li></a>
+                <a href="contacto.html" ><li>Contactanos</li></a>
+            </ul>
+        </nav>
+        <!-- Fin Menu -->
+        
+        <!-- Sider -->
+        <div id="slider">
+            <ul>
+                <li><img src="/img/slider.jpg" alt="mislider"></li>
+            </ul>
+
+        </div>
+        <!-- Fin Sider -->
+        
+        <!-- Botones Slider-->
+        <div id="botoneraSlide">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- Fin Botones Slider-->
+        
+        <!-- Section -->
+        <section id="contacto">
+            <form action="">
+                <input type="text" id="nombre" placeholder="Nombrer" > 
+                <input type="email" id="email" placeholder="Email" > 
+                <input type="text" id="asunto" placeholder="Asunto" > 
+                <textarea id="mensaje" cols="30" rows="6" placeholder="Mensaje"></textarea>
+                <input type="submit" id="enviar" value="enviar">
+            </form>    
+        </section>
+        <!-- Fin Section -->
+        
+        <!-- Bottom -->
+        <div id="bottom">
+            <ul>
+                <li>
+                    <h1>Noticias</h1>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ol>
+                </li>
+                <li>
+                    <h1>Novedades</h1>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ol>
+                </li>
+                <li>
+                    <h1>Galeria</h1>
+                    <img>
+                </li>
+                <li>
+                    <h1>Redes Sociales</h1>
+                    <ul>
+                        <li><a href="http://www.facebook.com" target="_blank"></a></li>
+                        <li><a href="http://www.google.com" target="_blank"></a></li>
+                        <li><a href="http://www.pinteres.com" target="_blank"></a></li>
+                        <li><a href="http://www.twitter.com" target="_blank"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Fin Bottom -->
+        
+        <!-- Footer -->
+        <footer>
+            &copy; Sitio desarrollado por Ramon | todos los derechos reservados
+        </footer>
+        <!-- Fin Footer -->
+    </body>
+    </html>
